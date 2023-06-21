@@ -1,0 +1,9 @@
+// for mutation 
+var schema = buildSchema(`
+  type Mutation {
+    updateUserInfo(id: Int, name: String, email: String, job_title: String): Boolean
+    createUser(name: String, email: String, job_title: String): Boolean
+    deleteUser(id: Int): Boolean
+  }
+`);
+
